@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Currículum</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#carta-presentacion">Carta de Presentación</a></li>
+        <li><a href="#proyectos">Proyectos Realizados</a></li>
+        <li><a href="#aptitudes">Aptitudes y Habilidades</a></li>
+        <li><a href="#curriculum">Currículum y Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carta de presentación -->
+  <section id="carta-presentacion">
+    <h2>Carta de Presentación</h2>
+    <p>¡Hola! Soy [Tu Nombre], un profesional apasionado por el desarrollo web, la tecnología y la innovación. Bienvenido/a a mi currículum interactivo.</p>
+  </section>
+
+  <!-- Proyectos realizados -->
+  <section id="proyectos">
+    <h2>Proyectos Realizados</h2>
+    <div class="project-gallery">
+      <div class="project-item" onclick="showProjectDetails(1)">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <p>Proyecto 1</p>
+      </div>
+      <div class="project-item" onclick="showProjectDetails(2)">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <p>Proyecto 2</p>
+      </div>
+      <div class="project-item" onclick="showProjectDetails(3)">
+        <img src="proyecto3.jpg" alt="Proyecto 3">
+        <p>Proyecto 3</p>
+      </div>
+    </div>
+    <div id="project-details" class="hidden">
+      <h3>Detalles del Proyecto</h3>
+      <p id="project-description">Haz clic en un proyecto para ver los detalles.</p>
+    </div>
+  </section>
+
+  <!-- Aptitudes y habilidades -->
+  <section id="aptitudes">
+    <h2>Aptitudes y Habilidades</h2>
+    <ul>
+      <li>Desarrollo web (HTML, CSS, JavaScript)</li>
+      <li>Programación en C++ y Python</li>
+      <li>Gestión de proyectos</li>
+      <li>Solución de problemas técnicos</li>
+    </ul>
+  </section>
+
+  <!-- Currículum y contacto -->
+  <section id="curriculum">
+    <h2>Currículum y Datos de Contacto</h2>
+    <p><strong>Nombre:</strong> [Tu Nombre]</p>
+    <p><strong>Email:</strong> tuemail@ejemplo.com</p>
+    <p><strong>Teléfono:</strong> +123 456 789</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">Mi perfil</a></p>
+    <form id="contact-form">
+      <h3>Formulario de Contacto</h3>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
