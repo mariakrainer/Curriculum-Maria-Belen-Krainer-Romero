@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum - Proyectos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mi Currículum</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Carta de Presentación</a></li>
+        <li><a href="proyectos.html">Proyectos Realizados</a></li>
+        <li><a href="aptitudes.html">Aptitudes y Habilidades</a></li>
+        <li><a href="curriculum.html">Currículum y Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="proyectos">
+    <h2>Proyectos Realizados</h2>
+    <div class="project-gallery">
+      <div class="project-item" onclick="showProjectDetails(1)">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <p>Proyecto 1</p>
+      </div>
+      <div class="project-item" onclick="showProjectDetails(2)">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <p>Proyecto 2</p>
+      </div>
+    </div>
+    <div id="project-details" class="hidden">
+      <h3>Detalles del Proyecto</h3>
+      <p id="project-description">Haz clic en un proyecto para ver los detalles.</p>
+    </div>
+  </section>
+</body>
+</html>
