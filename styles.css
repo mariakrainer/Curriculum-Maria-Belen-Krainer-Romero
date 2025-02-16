@@ -1,23 +1,23 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #f5f5f5;
 }
 
 header {
   background-color: #343a40;
-  color: #ffffff;
   padding: 1rem;
   text-align: center;
 }
 
-h1 {
+header h1 {
+  color: #ffffff;
   margin: 0;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -29,18 +29,14 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block;
   text-decoration: none;
-  background-color: #007bff;
   color: white;
+  background-color: #007bff;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
-  text-align: center;
-  border: 2px solid #007bff;
-  transition: all 0.3s ease;
-  width: 150px; /* Ajusta el ancho del botón */
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -48,45 +44,53 @@ nav ul li a:hover {
   color: #007bff;
 }
 
-section {
-  padding: 2rem;
-  text-align: center;
-}
-
-.project-gallery {
+.presentation-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  border-radius: 10px;
 }
 
-.project-item {
-  margin: 10px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
+.profile-image {
   width: 200px;
-  text-align: center;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.project-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.info h2 {
+  color: #e74c3c;
 }
 
-.hidden {
-  display: none;
+.info h3 {
+  margin-top: 5px;
+  font-size: 24px;
+  color: #333;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.contact-info {
+  list-style: none;
+  padding: 0;
 }
 
-button:hover {
-  background-color: #0056b3;
+.contact-info li {
+  margin: 5px 0;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
 }
